@@ -38,9 +38,27 @@ angular.module('starter.controllers', [])
   $scope.showInfoForm = false;
 
   $scope.toggleShowInfoForm = function() {
-    console.log('toggle');
     $scope.showInfoForm = !$scope.showInfoForm;
   };
+
+})
+
+.controller('CameraAfterCtrl', function($scope) {
+
+  $scope.showInfoForm = false;
+
+  $scope.toggleShowInfoForm = function() {
+    $scope.showInfoForm = !$scope.showInfoForm;
+  };
+
+  $scope.submitRating = function(upVote) {
+    
+    if(upVote) {
+      $scope.rating = "Awesome cut!";
+    } else {
+      $scope.rating = "A load of rubbish!";
+    }
+  }
 
 })
 

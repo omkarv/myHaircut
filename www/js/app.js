@@ -45,7 +45,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       'menuContent': {
         templateUrl: "templates/camerabefore.html",
         controller: "CameraBeforeCtrl"
+      }
+    }
+  })
 
+  .state('app.duringhaircut', {
+    url: "/duringhaircut",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/duringhaircut.html"
       }
     }
   })
@@ -54,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/cameraafter",
     views: {
       'menuContent': {
-        templateUrl: "templates/cameraafter.html"
+        templateUrl: "templates/cameraafter.html",
+        controller: "CameraAfterCtrl"
       }
     }
   })
